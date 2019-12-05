@@ -64,7 +64,7 @@ export default class ViewBerry extends React.Component {
 
       <View style={styles.descContainer}>
         <Text style={styles.title}>{content.name || 'No Name'}</Text>
-        <Text style={material.subheading}><Text style={{fontWeight: 'bold'}}>Flavor:</Text> {content.flavor || 'No Flavor'}</Text>
+        <Text style={material.subheading}><Text style={{fontWeight: 'bold'}}>Flavor(s):</Text> {content.flavor || 'No Flavor'}</Text>
         <Text style={material.subheading}><Text style={{fontWeight: 'bold'}}>Description:</Text> {content.desc || 'No Description'}</Text>
         <Text style={material.subheading}><Text style={{fontWeight: 'bold'}}>Effect:</Text> {content.effect || 'No Effect'}</Text>
       </View>

@@ -75,6 +75,7 @@ export default class Home extends React.Component {
             <View style={styles.harvest}>
               <Text style={styles.timerOne}>Soil Status:</Text>
               <CountDown
+                ref={component => this._soilWater = component}
                 until={50.0 / item.soil * 3600}
                 size={10}
                 onFinish={() => alert(item.name + " needs to be watered!")}

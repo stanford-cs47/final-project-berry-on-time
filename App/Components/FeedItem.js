@@ -47,6 +47,10 @@ export default class FeedItem extends React.Component {
     this.props.navigation.popToTop();
   }
 
+  waterPlantedBerry = () => {
+
+  }
+
   render() {
     const { content = {} } = this.props;
 
@@ -61,7 +65,7 @@ export default class FeedItem extends React.Component {
             <Text style={material.body1}><Text style={{fontWeight: 'bold'}}>Soil Status: Wet</Text></Text>
             <Text style={material.body1}><Text style={{fontWeight: 'bold'}}>Time Left: {content.growth} hrs</Text></Text>
           </View>
-          <Text style={material.subheading}><Text style={{fontWeight: 'bold'}}>Flavor:</Text> {content.flavor || 'No Flavor'}</Text>
+          <Text style={material.subheading}><Text style={{fontWeight: 'bold'}}>Flavor(s):</Text> {content.flavor || 'No Flavor'}</Text>
           <Text style={material.subheading}><Text style={{fontWeight: 'bold'}}>Description:</Text> {content.desc || 'No Description'}</Text>
           <Text style={material.subheading}><Text style={{fontWeight: 'bold'}}>Effect:</Text> {content.effect || 'No Effect'}</Text>
         </View>
