@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "CS 47 Final Project",
-    "slug": "finalProject",
+    "name": "Nav",
+    "slug": "Lecture5B-demo",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
