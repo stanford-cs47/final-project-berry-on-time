@@ -13,7 +13,7 @@ export default class plantedBerryViewer extends React.Component {
 
     return {
       headerTitle: (
-        <View style={{justifyContent: 'center', alignItems: 'center'}}>
+        <View style={{justifyContent: 'center', alignItems: 'center', textAlign: 'center', flex: 1}}>
           <Text style={material.title}>Info</Text>
         </View>
       )

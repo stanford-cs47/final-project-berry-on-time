@@ -42,7 +42,7 @@ const TabNav = createBottomTabNavigator({
   tabBarOptions: {
     activeTintColor: '#8eb00b',
     inactiveTintColor: '#bbb'
-  }
+  },
 });
 
 const MyApp = createAppContainer(TabNav);

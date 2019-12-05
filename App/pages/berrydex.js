@@ -10,6 +10,10 @@ export default class Berrydex extends React.Component {
 
   static navigationOptions = {
      title: 'Berrydex',
+     headerTitleStyle: {
+        textAlign:"center",
+        flex:1
+    },
    };
 
   state = {
@@ -171,8 +175,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   searchbar: {
-    flex: 0.07,
     flexDirection: 'row',
+    height: 50,
     borderRadius: 15,
     backgroundColor: '#efefef',
     padding: 10,
@@ -183,7 +187,7 @@ const styles = StyleSheet.create({
   },
   button: {
     height: 25,
-    paddingRight: 10
+    paddingRight: 10,
   },
   flatlist: {
     flex: 1,

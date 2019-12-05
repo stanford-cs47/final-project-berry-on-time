@@ -11,6 +11,10 @@ export default class Home extends React.Component {
 
   static navigationOptions = {
      title: 'Berries Planted',
+     headerTitleStyle: {
+        textAlign:"center",
+        flex:1
+    },
    };
 
   state = {
@@ -77,22 +81,24 @@ export default class Home extends React.Component {
               <CountDown
                 ref={component => this._soilWater = component}
                 until={50.0 / item.soil * 3600}
-                size={10}
+                size={15}
                 onFinish={() => alert(item.name + " needs to be watered!")}
                 digitStyle={{backgroundColor: '#FFF'}}
                 timeToShow={['H', 'M', 'S']}
-                timeLabels={{h: 'HH', m: 'MM', s: 'SS'}}
+                timeLabels={{h: null, m: null, s: null}}
+                showSeparator
             />
             </View>
             <View style={styles.harvest}>
               <Text style={styles.timerTwo}>Time Left:</Text>
               <CountDown
                 until={item.growth * 60 * 60}
-                size={10}
+                size={15}
                 onFinish={() => alert(item.name + " is ready for harvest!")}
                 digitStyle={{backgroundColor: '#FFF'}}
                 timeToShow={['H', 'M', 'S']}
-                timeLabels={{h: 'HH', m: 'MM', s: 'SS'}}
+                timeLabels={{h: null, m: null, s: null}}
+                showSeparator
               />
             </View>
           </View>
